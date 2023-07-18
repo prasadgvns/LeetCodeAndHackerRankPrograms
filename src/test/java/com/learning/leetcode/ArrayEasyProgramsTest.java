@@ -41,4 +41,30 @@ public class ArrayEasyProgramsTest {
 
         assertArrayEquals(expectedOutput2, ArrayEasyPrograms.runningSumOptimum(nums2));
     }
+
+    @Test
+    public void leftRightDifferenceTest(){
+        int[] expected = {15, 1, 11, 22};
+        int[] nums = {10, 4, 8, 3};
+
+        assertArrayEquals(expected, ArrayEasyPrograms.leftRightDifference(nums));
+
+        int[] nums1 = {1};
+        int[] expected1 = {0};
+
+        assertArrayEquals(expected1, ArrayEasyPrograms.leftRightDifference(nums1));
+    }
+
+    @Test
+    public void leftRightDifferenceOptimumTest(){
+        int[] expected = {15, 1, 11, 22};
+        int[] nums = {10, 4, 8, 3};
+
+        assertArrayEquals(expected, ArrayEasyPrograms.leftRightDifferenceOptimum(nums));
+
+        int[] nums1 = {1};
+        int[] expected1 = {0};
+
+        assertArrayEquals(expected1, ArrayEasyPrograms.leftRightDifferenceOptimum(nums1));
+    }
 }
